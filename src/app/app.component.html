@@ -1,0 +1,7 @@
+<div class="container mx-auto max-w-2xl">
+  <div class="text-center text-2xl font-bold my-8">Note Taking App</div>
+  <div class="container mx-auto max-w-2xl">
+    <app-note-form [selectedNote]="selectedNote"></app-note-form>
+    <app-note-list (selectedNote)="selectNote($event)"></app-note-list>
+  </div>
+</div>
